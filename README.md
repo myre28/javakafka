@@ -10,10 +10,10 @@ This is a simple Spring Boot app to demonstrate sending and receiving of message
 
 As Kafka topics are not created automatically by default, this application requires that you create the following topics manually.
 
-`$ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic miabwa`<br>
-`$ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 5 --topic partitioned`<br>
-`$ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic filtered`<br>
-`$ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic greeting`<br>
+`$ bin/kafka-topics.sh --create --zookeeper localhost:9092 --replication-factor 1 --partitions 1 --topic miabwa`<br>
+`$ bin/kafka-topics.sh --create --zookeeper localhost:9092 --replication-factor 1 --partitions 5 --topic partitioned`<br>
+`$ bin/kafka-topics.sh --create --zookeeper localhost:9092 --replication-factor 1 --partitions 1 --topic filtered`<br>
+`$ bin/kafka-topics.sh --create --zookeeper localhost:9092 --replication-factor 1 --partitions 1 --topic greeting`<br>
 
 When the application runs successfully, following output is logged on to console (along with spring logs):
 
